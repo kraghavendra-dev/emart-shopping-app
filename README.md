@@ -1,16 +1,66 @@
-# React + Vite
+# E-Mart Shopping App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+E-Mart is a simple e-commerce web application built using React. It allows users to browse products by category, add items to the cart. The goal of this project is to create a clean and responsive shopping interface while following a reusable component-based architecture.
 
-Currently, two official plugins are available:
+The application focuses on smooth navigation, dynamic cart updates, and a user-friendly layout that works well across different screen sizes. It also demonstrates state management using Context API and routing using React Router. This project reflects practical frontend development concepts such as component reusability, state handling, and responsive UI design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+https://kraghavendra-dev.github.io/emart-shopping-app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+* Product listing by category
+* Add to cart functionality
+* Remove items from cart
+* Responsive design for all devices
+* Reusable component architecture
+* Routing using React Router
+* Global state management using Context API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+* React JS
+* JavaScript (ES6+)
+* CSS3
+* Vite
+* React Router DOM
+* Context API
+
+## Project Structure
+
+src
+components - reusable UI components
+pages - application pages
+store - global state management
+App.jsx - main application component
+main.jsx - entry point
+
+## Installation
+
+Clone the repository
+
+git clone https://github.com/kraghavendra-dev/emart-shopping-app.git
+
+Navigate to project folder
+
+cd emart-shopping-app
+
+Install dependencies
+
+npm install
+
+Run the application
+
+npm run dev
+
+## Deployment
+
+This project is deployed using GitHub Pages.
+
+https://kraghavendra-dev.github.io/emart-shopping-app/
+
+## Author
+
+Raghavendra |
+Frontend Developer (React.js)
