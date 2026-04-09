@@ -1,0 +1,100 @@
+.FooterSection{
+    background-color:rgb(63, 50, 50);
+    color:white;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+.footerDetailsSection{
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+}
+.footerTitle h2{
+    color: rgb(236, 157, 9);
+    font-weight: 500;
+    margin:20px;
+    font-size: 35px;
+    margin-top: 20px;
+}
+.footerDetailsSection h4{
+    text-decoration: underline;
+    padding: 5px 0px;
+}
+.footerDetailsSection p{
+    padding: 5px 0px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.socialMediaSection{
+    display: flex;
+    align-items: center;
+    margin:15px;
+    justify-content: center;
+    justify-content: space-between;
+}
+.socialIcons{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-top:10px;
+}
+
+.socialIcons i{
+  font-size:24px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.socialIcons i:hover{
+  transform:scale(1.2);
+}
+
+.fa-facebook{ color:#1877F2; }
+.fa-instagram{ color:#E4405F; }
+.fa-youtube{ color:red; }
+.fa-twitter{ color:#1DA1F2; }
+@media (max-width: 480px){
+    .footerDetailsSection{
+        flex-wrap: wrap;
+    }
+    .footerAbout,
+    .footerMagazine {
+        width: 48%;
+        white-space: nowrap;
+    }
+    .footerProf,
+    .footerMerchants {
+        display: none;
+    }
+    .footerTitle h2{
+        font-size: 25px;
+    }
+    .socialMediaSection{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .footerDetailsSection{
+        flex-wrap: wrap;
+    }
+    .footerAbout,
+    .footerMagazine,
+    .footerProf,
+    .footerMerchants {
+        width: 48%;
+        white-space: nowrap;
+        
+        gap: 40px;
+    }
+    .footerTitle h2{
+        font-size: 30px;
+    }
+    .socialMediaSection{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,47 @@
+.bannerSection{
+    
+    overflow: hidden;
+    
+}
+.bannerSection img{
+    width:100%;
+    height:100%;
+    display:block;
+    
+    object-fit:contain;
+    
+    
+}
+
+
+@media (max-width: 480px){
+    .bannerSection{
+        height: 160px;
+        
+    }
+    .bannerSection img {
+        object-fit: cover;
+    }
+    
+}
+@media (max-width: 768px){
+    .bannerSection{
+        height: 220px;
+        
+        
+    }
+    .bannerSection img {
+        object-fit: cover;
+    }
+    
+}
+@media (max-width: 1024px){
+    .bannerSection {
+        height: 280px;
+        
+    }
+    .bannerSection img {
+        object-fit: cover;
+    }
+    
+}

@@ -1,0 +1,33 @@
+
+.CompSection{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+    margin:8px;
+}
+.comp-Card{
+    background: #fff;
+    color: #222;
+    padding:15px;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.dark .comp-Card{
+    background: #1f1f1f;
+    color:#fff;
+}
+/* .pageImg{
+    background: #fff;
+    padding:15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+} */
+.comp-Img img{
+    width:100%;
+    height:180px;
+    object-fit: contain;
+    
+}

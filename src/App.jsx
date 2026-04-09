@@ -1,0 +1,96 @@
+import React, { lazy, Suspense } from 'react'
+import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Home from './stores/pages/HomePage/Home'
+import MobilesPage from './stores/pages/MobilesPage/MobilesPage'
+import ComputersPage from './stores/pages/ComputersPage/ComputersPage'
+
+import WatchesPage from './stores/pages/WatchesPage/WatchesPage'
+import MensFashion from './stores/pages/MensFashion/MensFashion'
+import Women from './stores/pages/Women/Women'
+import Furniture from './stores/pages/Furniture/Furniture'
+import AcPage from './stores/pages/AcPage/AcPage'
+import KitchenPage from './stores/pages/KitchenPage/KitchenPage'
+import TvsPage from './stores/pages/TvsPage/TvsPage'
+import SpeakersPage from './stores/pages/SpeakersPage/SpeakersPage'
+import FridgesPage from './stores/pages/FridgesPage/FridgesPage'
+import BooksPage from './stores/pages/BookPages/BooksPage'
+const MobileSinglePage = lazy(() => import("./singles/MobileSinglePage/MobileSinglePage"));
+const ComputerSinglePage = React.lazy(() => import("./singles/ComputerSinglePage/ComputerSinglePage"));
+const WatchSinglePage = React.lazy(() => import("./singles/WatchSinglePage/WatchSinglePage"));
+const MensSinglePage = React.lazy(() => import("./singles/MensSinglePage/MensSinglePage"));
+const WomenSinglePage = React.lazy(() => import("./singles/WomenSinglePage/WomenSinglePage"));
+const FurnitureSinglePage = React.lazy(() => import("./singles/FurnitureSinglePage/FurnitureSinglePage"));
+const AcSinglePage = React.lazy(() => import("./singles/AcSinglePage/AcSinglePage"));
+const KitchenSinglePage = React.lazy(() => import("./singles/KitchenSinglePage/KitchenSinglePage"));
+const TvSinglePage = React.lazy(() => import("./singles/TvSinglePage/TvSinglePage"));
+const SpeakerSinglePage = React.lazy(() => import("./singles/SpeakerSinglePage/SpeakerSinglePage"));
+const FridgeSinglePage = React.lazy(() => import("./singles/FridgeSinglePage/FridgeSinglePage"));
+const BookSinglePage = React.lazy(() => import("./singles/BookSinglePage/BookSinglePage"));
+import Footer from './stores/pages/Footer/Footer'
+import UserCart from './singles/UserCartItems/UserCart'
+import Navbar from './stores/components/navbar/Navbar'
+
+
+
+
+
+
+
+const App = () => {
+  return (
+    <div className="app-container">
+
+      <div className="app">
+        <div className='navbar'>
+          <Navbar />
+        </div>
+
+        <div className='main-content'>
+          <Suspense fallback={<h3>Loading....</h3>}>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/pagemobiles' element={<MobilesPage />} />
+              <Route path='/pagecomputers' element={<ComputersPage />} />
+              <Route path='/pagewatches' element={<WatchesPage />} />
+              <Route path='/pagemens' element={<MensFashion />} />
+              <Route path='/pagewomen' element={<Women />} />
+              <Route path='/pagefurniture' element={<Furniture />} />
+              <Route path='/pageac' element={<AcPage />} />
+              <Route path='/pagekitchen' element={<KitchenPage />} />
+              <Route path='/pagetvs' element={<TvsPage />} />
+              <Route path='/pagespeakers' element={<SpeakersPage />} />
+              <Route path='/pagefridges' element={<FridgesPage />} />
+              <Route path='/pagebooks' element={<BooksPage />} />
+
+              <Route path='/mobile/:id' element={<MobileSinglePage />} />
+              <Route path='/computer/:id' element={<ComputerSinglePage />} />
+              <Route path='/watch/:id' element={<WatchSinglePage />} />
+              <Route path='/men/:id' element={<MensSinglePage />} />
+              <Route path='/women/:id' element={<WomenSinglePage />} />
+              <Route path='/furniture/:id' element={<FurnitureSinglePage />} />
+              <Route path='/ac/:id' element={<AcSinglePage />} />
+              <Route path='/kitchen/:id' element={<KitchenSinglePage />} />
+              <Route path='/tv/:id' element={<TvSinglePage />} />
+              <Route path='/speaker/:id' element={<SpeakerSinglePage />} />
+              <Route path='/fridge/:id' element={<FridgeSinglePage />} />
+              <Route path='/book/:id' element={<BookSinglePage />} />
+
+              <Route path='/cart' element={<UserCart />} />
+            </Routes>
+
+          </Suspense>
+        </div>
+
+      </div>
+      <div className='footer'>
+        <Footer />
+      </div>
+      
+
+    </div>
+
+  )
+}
+
+export default App
