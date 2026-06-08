@@ -13,6 +13,7 @@ https://kraghavendra-dev.github.io/emart-shopping-app/
 * Product listing by category
 * Add to cart functionality
 * Remove items from cart
+* Theme Switcher (Light & Dark Mode)
 * Responsive design for all devices
 * Reusable component architecture
 * Routing using React Router
